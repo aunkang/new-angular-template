@@ -476,8 +476,8 @@
                   <span>Forms</span>
                 </a>
                 <ul class="nav nav-children">
-                  <li>
-                    <a href="forms-basic.html">
+                  <li routerLinkActive="nav-active">
+                    <a [routerLink]="['sample']">
                       Basic
                     </a>
                   </li>
@@ -706,7 +706,7 @@
 
     <section role="main" class="content-body">
       <header class="page-header">
-        <h2>Dashboard</h2>
+        <h2>Dashboard-hahah</h2>
 
         <div class="right-wrapper pull-right">
           <ol class="breadcrumbs">
@@ -715,6 +715,8 @@
                 <i class="fa fa-home"></i>
               </a>
             </li>
+            <li><span>UI Elements</span></li>
+            <li><span>Icons</span></li>
             <li><span>Dashboard</span></li>
           </ol>
 
@@ -722,6 +724,7 @@
         </div>
       </header>
 
+      <router-outlet></router-outlet>
       <!-- end: page -->
     </section>
   </div>
@@ -794,7 +797,3 @@
     </div>
   </aside>
 </section>
-
-
-
-<router-outlet></router-outlet>
